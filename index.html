@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Srinandhini Puralasetti | Aspiring Software Developer & MCA Student</title>
+  <meta name="description"
+    content="Personal portfolio of Srinandhini Puralasetti - Aspiring Software Developer and MCA student specializing in Python, Django, full-stack web technologies, and database architecture.">
+  <meta name="keywords"
+    content="Srinandhini Puralasetti, Software Developer, Python Developer, Django, Full-Stack, MCA Student, Visakhapatnam, Andhra University, Portfolio">
+  <meta name="author" content="Srinandhini Puralasetti">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='15' fill='%23183153'/><text x='50%' y='55%' font-family='Arial, sans-serif' font-size='15' font-weight='bold' fill='%23C6A76B' text-anchor='middle' dominant-baseline='middle'>SP</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand" aria-label="Srinandhini Puralasetti Portfolio">
+        <span class="brand-dot"></span>
+        <span>SRINANDHINI PURALASETTI</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li class="nav-item"><a href="#home" class="active">Home</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#education">Education</a></li>
+          <li class="nav-item"><a href="#skills">Skills</a></li>
+          <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hamburger Menu Button for Mobile -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+      <!-- Left Content Column -->
+      <div class="hero-content reveal-on-scroll">
+        <div class="hero-eyebrow">
+          <span class="hero-eyebrow-line"></span>
+          <span>HELLO, I'M</span>
+        </div>
+        <h1 class="hero-title">Srinandhini Puralasetti</h1>
+        <div class="hero-subtitle">
+          <span>Aspiring Software Developer</span>
+          <span class="pill-separator">•</span>
+          <span>MCA Student</span>
+        </div>
+        <p class="hero-description">
+          Motivated MCA student with a strong interest in software development, Python programming, and full-stack web
+          technologies. Passionate about building practical applications, solving real-world problems, and continuously
+          learning emerging technologies.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>View My Projects</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="assets/resume.pdf" class="btn btn-secondary" download="Srinandhini_Puralasetti_Resume.pdf"
+            target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Download Resume</span>
+          </a>
+        </div>
+
+        <div class="hero-social-block">
+          <span class="hero-social-label">Connect</span>
+          <div class="social-links">
+            <!-- GitHub Link -->
+            <a href="https://github.com/Nandy-820" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+              aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+            </a>
+            <!-- LinkedIn Link -->
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+              aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+            <!-- Email Direct Link -->
+            <a href="mailto:srinandhinipuralasetti25@gmail.com" class="social-icon-btn" aria-label="Send Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Visual Column: Professional Portrait Frame -->
+      <div class="hero-visual reveal-on-scroll delay-1">
+        <div class="portrait-wrapper">
+          <div class="portrait-backdrop-accent"></div>
+          <div class="portrait-frame">
+            <img src="images/profile.jpg" alt="Srinandhini Puralasetti - Aspiring Software Developer"
+              class="portrait-img">
+          </div>
+          <!-- Status Pill -->
+          <div class="status-badge">
+            <span class="status-indicator"></span>
+            <span>Open to Entry-Level Opportunities</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ME SECTION ==================== -->
+  <section class="section section-secondary" id="about">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-badge">Background & Purpose</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Dedicated to developing clean, functional software and turning ideas into robust
+          technical solutions.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Text Column -->
+        <div class="about-text-content reveal-on-scroll">
+          <p>
+            I am <strong class="about-highlight-phrase">Srinandhini Puralasetti</strong>, currently pursuing my Master
+            of Computer Applications (MCA). I have a foundation in programming, database management, and web
+            development.
+          </p>
+          <p>
+            I enjoy developing practical software applications using Python, Django, MySQL, and modern web technologies.
+          </p>
+          <p>
+            My primary goal is to grow as a software developer by continuously improving my technical abilities,
+            exploring new technologies, and contributing to meaningful software projects.
+          </p>
+        </div>
+
+        <!-- Info Cards Column -->
+        <div class="about-cards-column">
+          <!-- Card 1 -->
+          <div class="info-card reveal-on-scroll delay-1">
+            <div class="info-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="info-card-label">Education</div>
+              <div class="info-card-value">MCA – Pursuing</div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="info-card reveal-on-scroll delay-2">
+            <div class="info-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div>
+              <div class="info-card-label">Technical Focus</div>
+              <div class="info-card-value">Python & Full-Stack Development</div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="info-card reveal-on-scroll delay-3">
+            <div class="info-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 14 14"></polyline>
+              </svg>
+            </div>
+            <div>
+              <div class="info-card-label">Career Goal</div>
+              <div class="info-card-value">Software Developer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EDUCATION SECTION ==================== -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-badge">Academic Pathway</span>
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Consistent academic foundation in computer applications and science disciplines.</p>
+      </div>
+
+      <div class="timeline-wrapper">
+        <!-- Item 1: MCA -->
+        <div class="timeline-item reveal-on-scroll">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-top">
+              <h3 class="timeline-title">MASTER OF COMPUTER APPLICATIONS (MCA)</h3>
+              <span class="timeline-badge badge-pursuing">Pursuing</span>
+            </div>
+            <div class="timeline-institution">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M3 21h18M3 7v14M21 7v14M6 11h4M6 15h4M14 11h4M14 15h4M12 3l9 4H3l9-4z"></path>
+              </svg>
+              <span>Aditya Degree & P.G. Colleges, Andhra University</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: B.Sc -->
+        <div class="timeline-item reveal-on-scroll delay-1">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-top">
+              <h3 class="timeline-title">BACHELOR OF SCIENCE (B.Sc)</h3>
+              <span class="timeline-badge badge-percentage">78% • 2025</span>
+            </div>
+            <div class="timeline-institution">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M3 21h18M3 7v14M21 7v14M6 11h4M6 15h4M14 11h4M14 15h4M12 3l9 4H3l9-4z"></path>
+              </svg>
+              <span>Aditya Degree College, Andhra University</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Intermediate -->
+        <div class="timeline-item reveal-on-scroll delay-2">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-top">
+              <h3 class="timeline-title">INTERMEDIATE (MPC)</h3>
+              <span class="timeline-badge badge-percentage">82% • 2022</span>
+            </div>
+            <div class="timeline-institution">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M3 21h18M3 7v14M21 7v14M6 11h4M6 15h4M14 11h4M14 15h4M12 3l9 4H3l9-4z"></path>
+              </svg>
+              <span>K.G.B. Vidyalaya College</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: SSC -->
+        <div class="timeline-item reveal-on-scroll delay-3">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-top">
+              <h3 class="timeline-title">SECONDARY SCHOOL CERTIFICATE (SSC)</h3>
+              <span class="timeline-badge badge-percentage">96% • 2020</span>
+            </div>
+            <div class="timeline-institution">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M3 21h18M3 7v14M21 7v14M6 11h4M6 15h4M14 11h4M14 15h4M12 3l9 4H3l9-4z"></path>
+              </svg>
+              <span>K.G.B. Vidyalaya High School</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TECHNICAL SKILLS SECTION ==================== -->
+  <section class="section section-secondary" id="skills">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-badge">Skill Set</span>
+        <h2 class="section-title">Technical Expertise</h2>
+        <p class="section-subtitle">Structured proficiencies in programming languages, web frameworks, databases, and
+          developer toolsets.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- 1. Programming Languages -->
+        <div class="skill-category-card reveal-on-scroll delay-1">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="skill-category-title">PROGRAMMING LANGUAGES</h3>
+          </div>
+          <ul class="skill-pills-list">
+            <li class="skill-pill">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
+              Python
+            </li>
+            <li class="skill-pill">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
+              Java
+            </li>
+            <li class="skill-pill">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
+              C
+            </li>
+          </ul>
+        </div>
+
+        <!-- 2. Frameworks -->
+        <div class="skill-category-card reveal-on-scroll delay-2">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="skill-category-title">FRAMEWORKS</h3>
+          </div>
+          <ul class="skill-pills-list">
+            <li class="skill-pill">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              </svg>
+              Django
+            </li>
+          </ul>
+        </div>
+
+        <!-- 3. Web Technologies -->
+        <div class="skill-category-card reveal-on-scroll delay-3">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                </path>
+              </svg>
+            </div>
+            <h3 class="skill-category-title">WEB TECHNOLOGIES</h3>
+          </div>
+          <ul class="skill-pills-list">
+            <li class="skill-pill">HTML</li>
+            <li class="skill-pill">CSS</li>
+            <li class="skill-pill">Bootstrap</li>
+            <li class="skill-pill">JavaScript</li>
+          </ul>
+        </div>
+
+        <!-- 4. Database -->
+        <div class="skill-category-card reveal-on-scroll delay-1">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <h3 class="skill-category-title">DATABASE</h3>
+          </div>
+          <ul class="skill-pills-list">
+            <li class="skill-pill">MySQL</li>
+            <li class="skill-pill">DBMS</li>
+            <li class="skill-pill">SQL</li>
+          </ul>
+        </div>
+
+        <!-- 5. Core Concepts -->
+        <div class="skill-category-card reveal-on-scroll delay-2">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="skill-category-title">CORE CONCEPTS</h3>
+          </div>
+          <ul class="skill-pills-list">
+            <li class="skill-pill">Object-Oriented Programming</li>
+            <li class="skill-pill">Data Structures</li>
+            <li class="skill-pill">Machine Learning</li>
+          </ul>
+        </div>
+
+        <!-- 6. Development Tools -->
+        <div class="skill-category-card reveal-on-scroll delay-3">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                </path>
+              </svg>
+            </div>
+            <h3 class="skill-category-title">DEVELOPMENT TOOLS</h3>
+          </div>
+          <ul class="skill-pills-list">
+            <li class="skill-pill">Git</li>
+            <li class="skill-pill">GitHub</li>
+            <li class="skill-pill">Visual Studio Code</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FEATURED PROJECT SECTION ==================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-badge">Portfolio Work</span>
+        <h2 class="section-title">Featured Project</h2>
+        <p class="section-subtitle">Real-world full-stack development showcasing end-to-end implementation and
+          problem-solving.</p>
+      </div>
+
+      <div class="featured-project-container reveal-on-scroll">
+        <div class="project-showcase-card">
+          <!-- Card Header Banner -->
+          <div class="project-card-header">
+            <div class="project-header-pattern"></div>
+            <span class="project-type-tag">Full-Stack Web Application</span>
+            <h3 class="project-card-title">AI-Powered Resume Analyzer</h3>
+            <p class="project-card-lead">
+              Developed a full-stack web application using Python and Django to analyze resumes and provide ATS-based
+              evaluation.
+            </p>
+          </div>
+
+          <!-- Card Body Content -->
+          <div class="project-card-body">
+            <!-- Tech Stack Row -->
+            <div class="project-tech-stack-row">
+              <div class="project-tech-stack-label">Technologies Used</div>
+              <div class="tech-badges-list">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Django</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+                <span class="tech-badge">Bootstrap</span>
+                <span class="tech-badge">JavaScript</span>
+              </div>
+            </div>
+
+            <!-- Two-Column Grid: Features & Highlights -->
+            <div class="project-columns-grid">
+              <!-- Key Features -->
+              <div>
+                <h4 class="project-subheading">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="9 11 12 14 22 4"></polyline>
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                  </svg>
+                  Key Features
+                </h4>
+                <ul class="project-bullets">
+                  <li>Resume Parsing</li>
+                  <li>Keyword Matching</li>
+                  <li>Skill Extraction</li>
+                  <li>ATS Score Generation</li>
+                  <li>Missing Skills Identification</li>
+                  <li>Personalized Resume Improvement Suggestions</li>
+                  <li>User Authentication</li>
+                  <li>Interactive Dashboard</li>
+                  <li>Resume Analysis History</li>
+                </ul>
+              </div>
+
+              <!-- Project Highlights -->
+              <div>
+                <h4 class="project-subheading">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  Project Highlights
+                </h4>
+                <ul class="project-bullets">
+                  <li>Developed the backend using Python and Django.</li>
+                  <li>Integrated MySQL for user accounts, uploaded resumes, and analysis history.</li>
+                  <li>Designed a responsive interface using HTML, CSS, Bootstrap, and JavaScript.</li>
+                  <li>Implemented resume evaluation and skill-matching features.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Action Buttons Bar -->
+            <div class="project-actions-bar">
+              <a href="https://github.com/Nandy-820" target="_blank" rel="noopener noreferrer"
+                class="btn btn-primary btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                <span>View on GitHub</span>
+              </a>
+              <span class="project-note">Repository access available on GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CERTIFICATIONS SECTION ==================== -->
+  <section class="section section-secondary" id="certifications">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-badge">Credentials</span>
+        <h2 class="section-title">Certifications & Learning</h2>
+        <p class="section-subtitle">Verified professional credentials in communication and database engineering.</p>
+      </div>
+
+      <div class="certifications-grid">
+        <!-- Certification 1 -->
+        <div class="cert-card reveal-on-scroll delay-1">
+          <div class="cert-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 15l-2 5l9-11h-7l2-5l-9 11h7z" />
+            </svg>
+          </div>
+          <div class="cert-card-content">
+            <h3>English Communication Skills Certification</h3>
+            <div class="cert-provider">Pearson Mepro</div>
+          </div>
+        </div>
+
+        <!-- Certification 2 -->
+        <div class="cert-card reveal-on-scroll delay-2">
+          <div class="cert-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+          </div>
+          <div class="cert-card-content">
+            <h3>Oracle Certification Course</h3>
+            <div class="cert-provider">Oracle Database & SQL Curriculum</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Strengths & Interests Area -->
+      <div class="strengths-interests-grid">
+        <!-- Personal Strengths -->
+        <div class="attributes-box reveal-on-scroll delay-1">
+          <h3 class="attributes-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3">
+              </path>
+            </svg>
+            Personal Strengths
+          </h3>
+          <div class="strengths-grid">
+            <div class="strength-item">
+              <span class="strength-check">✓</span>
+              <span>Quick Learner</span>
+            </div>
+            <div class="strength-item">
+              <span class="strength-check">✓</span>
+              <span>Self-Motivated</span>
+            </div>
+            <div class="strength-item">
+              <span class="strength-check">✓</span>
+              <span>Adaptability</span>
+            </div>
+            <div class="strength-item">
+              <span class="strength-check">✓</span>
+              <span>Time Management</span>
+            </div>
+            <div class="strength-item">
+              <span class="strength-check">✓</span>
+              <span>Active Listening</span>
+            </div>
+            <div class="strength-item">
+              <span class="strength-check">✓</span>
+              <span>Communication Skills</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Personal Interests -->
+        <div class="attributes-box reveal-on-scroll delay-2">
+          <h3 class="attributes-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+              </path>
+            </svg>
+            Interests
+          </h3>
+          <div class="interests-list">
+            <div class="interest-item">
+              <div class="interest-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+              </div>
+              <span>Learning New Technologies</span>
+            </div>
+            <div class="interest-item">
+              <div class="interest-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="5" r="2"></circle>
+                  <path d="M6 19l4-7 4 3 4-7"></path>
+                </svg>
+              </div>
+              <span>Yoga</span>
+            </div>
+            <div class="interest-item">
+              <div class="interest-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                </svg>
+              </div>
+              <span>Travelling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-badge">Get In Touch</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">"I'm always interested in learning, collaborating, and exploring opportunities in
+          software development. Feel free to connect with me."</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Left: Contact Details Cards -->
+        <div class="contact-info-panel reveal-on-scroll">
+          <!-- Name & Location Card -->
+          <div class="contact-card-item">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="contact-card-meta">
+              <div class="contact-meta-label">Location</div>
+              <div class="contact-meta-val">Visakhapatnam, Andhra Pradesh</div>
+            </div>
+          </div>
+
+          <!-- Email Card -->
+          <a href="mailto:purlachittinandhini@gmail.com" class="contact-card-item">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="contact-card-meta">
+              <div class="contact-meta-label">Email</div>
+              <div class="contact-meta-val">purlachittinandhini@gmail.com</div>
+            </div>
+          </a>
+
+          <!-- Phone Card -->
+          <a href="tel:+917735392972" class="contact-card-item">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+            </div>
+            <div class="contact-card-meta">
+              <div class="contact-meta-label">Phone</div>
+              <div class="contact-meta-val">+91 7735392972</div>
+            </div>
+          </a>
+
+          <!-- GitHub Card -->
+          <a href="https://github.com/Nandy-820" target="_blank" rel="noopener noreferrer" class="contact-card-item">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+            </div>
+            <div class="contact-card-meta">
+              <div class="contact-meta-label">GitHub</div>
+              <div class="contact-meta-val">github.com/Nandy-820</div>
+            </div>
+          </a>
+
+          <!-- LinkedIn Card -->
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-card-item">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </div>
+            <div class="contact-card-meta">
+              <div class="contact-meta-label">LinkedIn</div>
+              <div class="contact-meta-val">Srinandhini Puralasetti</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-form-container reveal-on-scroll delay-1">
+          <form class="contact-form" id="contactForm">
+            <div id="formStatusMsg" class="form-status-msg" role="alert"></div>
+
+            <div class="form-group">
+              <label for="formName" class="form-label">Full Name *</label>
+              <input type="text" id="formName" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="formEmail" class="form-label">Email Address *</label>
+              <input type="email" id="formEmail" name="email" class="form-control" placeholder="name@example.com"
+                required>
+            </div>
+
+            <div class="form-group">
+              <label for="formSubject" class="form-label">Subject</label>
+              <input type="text" id="formSubject" name="subject" class="form-control"
+                placeholder="Inquiry / Opportunity">
+            </div>
+
+            <div class="form-group">
+              <label for="formMessage" class="form-label">Message *</label>
+              <textarea id="formMessage" name="message" class="form-control" placeholder="Write your message here..."
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem;">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">SRINANDHINI PURALASETTI</div>
+        <div class="footer-copy">Designed & Developed by Srinandhini Puralasetti • &copy; 2026 All Rights Reserved.
+        </div>
+      </div>
+
+      <div class="footer-social-links">
+        <a href="https://github.com/Nandy-820" target="_blank" rel="noopener noreferrer" class="footer-social-icon"
+          aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+          </svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon"
+          aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+        </a>
+        <a href="mailto:purlachittinandhini@gmail.com" class="footer-social-icon" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+      stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Custom JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
