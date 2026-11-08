@@ -416,6 +416,35 @@ button, input, textarea {
   margin-bottom: 1rem;
 }
 
+/* Kinetic Type Hero Interactive Typography */
+.kinetic-title {
+  display: inline-block;
+  cursor: default;
+  user-select: none;
+  -webkit-user-select: none;
+  perspective: 1000px;
+}
+
+.kinetic-word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.kinetic-char {
+  display: inline-block;
+  transform-origin: center bottom;
+  will-change: transform, font-weight;
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), color 0.25s ease;
+}
+
+.kinetic-char.hover-active {
+  color: var(--accent-navy);
+}
+
+.kinetic-char:hover {
+  color: var(--champagne-gold-dark);
+}
+
 .hero-subtitle {
   font-size: 1.25rem;
   font-weight: 600;

@@ -7,6 +7,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initNavbar();
   initMobileMenu();
+  initKineticTypography();
   initScrollSpy();
   initScrollAnimations();
   initBackToTop();
@@ -219,6 +220,106 @@ function initContactForm() {
     setTimeout(() => {
       statusMsg.style.display = 'none';
     }, 7000);
+  }
+}
+
+/**
+ * Interactive Kinetic Typography for "Srinandhini Puralasetti"
+ * Inspired by Kokonut UI Pro Kinetic Type Hero:
+ * Each letter detects cursor proximity and dynamically leans / skews away from the cursor.
+ */
+function initKineticTypography() {
+  const container = document.getElementById('kineticName');
+  if (!container) return;
+
+  const rawText = container.textContent.trim();
+  const words = rawText.split(/\s+/);
+
+  // Wrap letters in interactive spans while preserving accessible words
+  container.innerHTML = words.map(word => {
+    const lettersHtml = word.split('').map(char => 
+      `<span class="kinetic-char">${char}</span>`
+    ).join('');
+    return `<span class="kinetic-word">${lettersHtml}</span>`;
+  }).join('<span class="kinetic-char" style="width: 0.35em; display: inline-block;">&nbsp;</span>');
+
+  const chars = container.querySelectorAll('.kinetic-char');
+  if (!chars.length) return;
+
+  // Proximity and kinetic configuration
+  const maxDistance = 240; // Proximity radius in px
+  const maxSkew = 24;      // Max lean angle in degrees
+  const maxLift = 6;       // Max vertical lift in px
+
+  let mouseX = -9999;
+  let mouseY = -9999;
+  let rafId = null;
+
+  window.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    if (!rafId) {
+      rafId = requestAnimationFrame(updateKineticLetters);
+    }
+  }, { passive: true });
+
+  window.addEventListener('mouseleave', () => {
+    resetCharacters();
+  });
+
+  // Touch support for mobile devices
+  window.addEventListener('touchmove', (e) => {
+    if (e.touches && e.touches[0]) {
+      mouseX = e.touches[0].clientX;
+      mouseY = e.touches[0].clientY;
+      if (!rafId) {
+        rafId = requestAnimationFrame(updateKineticLetters);
+      }
+    }
+  }, { passive: true });
+
+  window.addEventListener('touchend', () => {
+    resetCharacters();
+  });
+
+  function updateKineticLetters() {
+    rafId = null;
+
+    chars.forEach((char) => {
+      if (char.textContent === '\u00A0' || !char.textContent.trim()) return;
+
+      const rect = char.getBoundingClientRect();
+      const charCenterX = rect.left + rect.width / 2;
+      const charCenterY = rect.top + rect.height / 2;
+
+      const deltaX = mouseX - charCenterX;
+      const deltaY = mouseY - charCenterY;
+      const distance = Math.hypot(deltaX, deltaY);
+
+      if (distance < maxDistance) {
+        // Smooth falloff factor
+        const factor = Math.cos((distance / maxDistance) * (Math.PI / 2));
+        
+        // Negative deltaX leans away to the opposite direction of cursor
+        const leanDirection = deltaX > 0 ? -1 : 1;
+        const skewAngle = Math.min(Math.abs(deltaX) / maxDistance, 1) * maxSkew * leanDirection * factor;
+        const translateY = -maxLift * factor;
+        const scale = 1 + (0.06 * factor);
+
+        char.style.transform = `skewX(${skewAngle.toFixed(2)}deg) translateY(${translateY.toFixed(2)}px) scale(${scale.toFixed(3)})`;
+        char.classList.add('hover-active');
+      } else {
+        char.style.transform = 'skewX(0deg) translateY(0px) scale(1)';
+        char.classList.remove('hover-active');
+      }
+    });
+  }
+
+  function resetCharacters() {
+    chars.forEach((char) => {
+      char.style.transform = 'skewX(0deg) translateY(0px) scale(1)';
+      char.classList.remove('hover-active');
+    });
   }
 }
 
