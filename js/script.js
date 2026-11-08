@@ -199,9 +199,9 @@ function initContactForm() {
     // Simulate sending email asynchronously
     setTimeout(() => {
       // Create mailto link as fallback/direct integration
-      const mailtoLink = `mailto:purlachittinandhini@gmail.com?subject=${encodeURIComponent(subject || 'Portfolio Inquiry from ' + name)}&body=${encodeURIComponent("Sender Name: " + name + "\nSender Email: " + email + "\n\nMessage:\n" + message)}`;
+      const mailtoLink = `mailto:srinandhinipuralasetti25@gmail.com?subject=${encodeURIComponent(subject || 'Portfolio Inquiry from ' + name)}&body=${encodeURIComponent("Sender Name: " + name + "\nSender Email: " + email + "\n\nMessage:\n" + message)}`;
       
-      showStatus('Thank you for reaching out! Your message draft is ready. If your mail client does not open automatically, please reach me directly at purlachittinandhini@gmail.com.', 'success');
+      showStatus('Thank you for reaching out! Your message draft is ready. If your mail client does not open automatically, please reach me directly at srinandhinipuralasetti25@gmail.com.', 'success');
       
       // Prompt mailto
       window.location.href = mailtoLink;
